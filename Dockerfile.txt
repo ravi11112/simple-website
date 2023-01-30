@@ -1,0 +1,8 @@
+#use nginx image as a parent image 
+FROM nginx
+
+#copy the html folder in the container
+COPY html/  /usr/share/nginx/html
+
+#expose port 80 for incomming traffic
+EXPOSE 80
